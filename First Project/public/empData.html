@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Department</th>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="age"></td>
+            <td id="department"></td>
+        </tr>
+    </table>
+
+    <script>
+        // JavaScript code to populate the table with object data
+        const empAr = JSON.parse(`<!--#INSERT_EMPLOYEE_DATA-->`);
+        document.getElementById('name').innerText = empAr.name;
+        document.getElementById('age').innerText = empAr.age;
+        document.getElementById('department').innerText = empAr.department;
+    </script>
+</body>
+</html>

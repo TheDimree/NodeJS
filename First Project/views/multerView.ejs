@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload MM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Multer Middleware</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <!-- <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupFile01">Profile Pic</label>
+                <input type="file" class="form-control" id="inputGroupFile01" name="profilePic">
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupFile02">Pet Pic</label>
+                <input type="file" class="form-control" id="inputGroupFile02" name="petPic">
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupFile03">Cover Pic</label>
+                <input type="file" class="form-control" id="inputGroupFile03" name="coverPic">
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupFile04">Other</label>
+                <input type="file" class="form-control" id="inputGroupFile04" name="other">
+            </div>
+               -->
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupFile0n">Add Photos</label>
+                <input type="file" class="form-control" id="inputGroupFile0n" name="pics" multiple>
+            </div>
+            
+            <button type="submit" class="btn btn-success">Upload</button>
+        </form>
+    </div>
+    
+    <div>
+        <% if(imgArr) { imgArr.map((value) => { %>
+            <img src="<%= value.path %>" alt="Uploaded Image" style="max-width: 300px;">
+            <% })} else {%>
+                <p>Please Upload photos.</p>
+                <% } %>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

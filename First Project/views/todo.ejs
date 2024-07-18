@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: cursive;
+        }
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>TODO List</h1>
+    <form action="/todo" method="post">
+    <input type="text" name="task" placeholder="Enter your task">
+    <input type="submit" value="Add">
+    </form>
+
+    <h2>Your Todo List:</h2>
+    <ul>
+        <% todoList.forEach((item)=>{%>
+            <li><%= item.name %></li>   <!-- //* The equal sign (=) inside the opening tag signifies that the enclosed expression should be evaluated and its result should be inserted into the HTML output -->          
+        <%})%>
+    </ul>
+</body>
+</html>
+
+

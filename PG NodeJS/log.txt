@@ -1,0 +1,58 @@
+Browser hit 2 times a request due to favicon..
+   
+   1715263696010: New request received
+   1715263696095: New request received
+   1715263721482: New request received
+   1715263721578: New request received
+   1715263957794: /about New request received
+   1715263957920: /favicon.ico New request received
+   1715264085329: / New request received
+   1715264214417: /contact New request received
+   1715266238541: / New request received
+   1715266240367: /home New request received
+   1715266240489: /favicon.ico New request received
+   1715266242105: /home New request received
+   1715266242166: /favicon.ico New request received
+   1715266251321: / New request received
+   1715266251924: /favicon.ico New request received
+
+  /favicon.ico request is skipped by = if(req.url === "/favicon.ico") { return res.end() }
+   
+   1715267539426: / New request received
+   1715267635254: /about New request received
+   1715267658301: / New request received
+   1715267659500: / New request received
+   1715267677898: /about?name=bhagesh New request received
+   1715268407217: / New request received
+   1715268446158: /about?name=bhagesh New request received
+   1715268497556: /about?name=bhagesh New request received
+   1715268522586: /about?name=bhagesh New request received
+   1715268741805: /about?name=bhagesh New request received
+   1715268756612: /about?name=bhagesh New request received
+   1715268795096: /about?name=bhagesh New request received
+   1715268875143: /about?name=bhagesh New request received
+1715604487190: GET / New request received
+1715609252864: GET / New request received
+1715609260082: GET / New request received
+1715609262478: GET / New request received
+1715609282769: GET / New request received
+1715609287547: GET / New request received
+1715609311455: GET / New request received
+1715609325201: GET / New request received
+1715609326852: GET / New request received
+1715609329907: GET / New request received
+1715609362284: GET / New request received
+1715609401734: GET / New request received
+1715609417419: GET / New request received
+1715609418530: GET / New request received
+1715609421214: GET / New request received
+1715609472933: GET / New request received
+1715609489730: GET / New request received
+1715609493939: GET /signup New request received
+1715610181702: GET /signup New request received
+1715610184773: GET / New request received
+1715610187782: GET /about?name=bhagesh New request received
+1715618587951: GET /about?name=bhagesh New request received
+1715618598017: GET / New request received
+1715619464248: GET / New request received
+1715619470326: GET /about New request received
